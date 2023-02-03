@@ -28,11 +28,21 @@ public class Product {
 
     private Integer quantity;
 
+    private String image;
     private Boolean deleted;
 
     public Product(String name, float price, Boolean deleted) {
         this.name = name;
         this.price = price;
+        this.deleted = deleted;
+    }
+
+    public Product(String name, float price, String notesDescription, Integer quantity, String image, Boolean deleted) {
+        this.name = name;
+        this.price = price;
+        this.notesDescription = notesDescription;
+        this.quantity = quantity;
+        this.image = image;
         this.deleted = deleted;
     }
 

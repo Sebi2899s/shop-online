@@ -82,7 +82,7 @@ public class RunAtStartup {
         myUser.setAccountNonExpired(true);
         myUser.setAccountNonLocked(true);
         myUser.setCredentialsNonExpired(true);
-        myUser.setEmail("conttesttest4@gmail.com");
+        myUser.setEmail("user@gmail.com");
         myUser.setFullName("Ion User");
         myUser.setPasswordConfirm("user");
         myUser.setRandomTokenEmail("randomToken");
@@ -98,6 +98,7 @@ public class RunAtStartup {
         f1.setName("\"Euphoria\" by Calvin Klein");
         f1.setNotesDescription("floral and fruity scent");
         f1.setPrice(70);
+        f1.setImage("https://esentedelux.ro/281-tm_large_default/calvin-klein-euphoria-eau-de-parfum-pentru-femei.jpg");
         f1.setQuantity(100);
         f1.setDeleted(faker.bool().bool());
 
@@ -105,6 +106,7 @@ public class RunAtStartup {
         f2.setName("\"Light Blue\" by Dolce & Gabbana");
         f2.setNotesDescription("citrus and floral scent");
         f2.setPrice(78);
+        f2.setImage("https://esentedelux.ro/4377-tm_large_default/dolce-gabbana-light-blue-eau-intense-eau-de-parfum-pentru-femei.jpg");
         f2.setQuantity(100);
         f2.setDeleted(faker.bool().bool());
 
@@ -113,6 +115,7 @@ public class RunAtStartup {
         f3.setName("\"Coco Mademoiselle\" by Chanel");
         f3.setNotesDescription("oriental and floral scent");
         f3.setPrice(138);
+        f3.setImage("https://esentedelux.ro/386-tm_large_default/chanel-coco-mademoiselle-eau-de-toilette-pentru-femei.jpg");
         f3.setQuantity(100);
         f3.setDeleted(faker.bool().bool());
 
@@ -121,6 +124,7 @@ public class RunAtStartup {
         f4.setName("\"Acqua di Gio\" by Giorgio Armani");
         f4.setNotesDescription(" aquatic and floral scent");
         f4.setPrice(92);
+        f4.setImage("https://esentedelux.ro/3070-tm_large_default/giorgio-armani-acqua-di-gio-profumo-eau-de-parfum-pentru-barbati.jpg");
         f4.setQuantity(100);
         f4.setDeleted(faker.bool().bool());
 
@@ -129,6 +133,7 @@ public class RunAtStartup {
         f5.setName("\"Very Irresistible\" by Givenchy");
         f5.setNotesDescription("floral and fruity scent");
         f5.setPrice(70);
+        f5.setImage("https://esentedelux.ro/759-tm_large_default/givenchy-very-irresistible-electric-rose-eau-de-toilette-pentru-femei.jpg");
         f5.setQuantity(100);
         f5.setDeleted(faker.bool().bool());
 
@@ -136,6 +141,7 @@ public class RunAtStartup {
         f6.setName("\"Gucci Bloom\"");
         f6.setNotesDescription("floral and woody scent");
         f6.setPrice(100);
+        f6.setImage("https://cdn.notinoimg.com/detail_main_mq/gucci/8005610481005_02-o/gucci-bloom-eau-de-parfum-pentru-femei___16.jpg");
         f6.setQuantity(100);
         f6.setDeleted(faker.bool().bool());
 
@@ -143,14 +149,16 @@ public class RunAtStartup {
         f7.setName("\"Yves Saint Laurent La Nuit de l'Homme\"");
         f7.setNotesDescription("spicy and woody scent");
         f7.setPrice(94);
+        f7.setImage("https://cdn.notinoimg.com/detail_main_mq/yves-saint-laurent/3365440375079_01-o/yves-saint-laurent-la-nuit-de-lhomme-eau-de-toilette-pentru-barbati___28.jpg");
         f7.setQuantity(100);
         f7.setDeleted(faker.bool().bool());
 
 
         Product f8 = new Product();
-        f8.setName("Tom Ford Noir");
+        f8.setName("Tom Ford Noir Extreme");
         f8.setNotesDescription("oriental and spicy scent");
         f8.setPrice(120);
+        f8.setImage("https://media.douglas.ro/media/image/2b/02/9c/888066035392_1280x1280.jpg");
         f8.setQuantity(100);
         f8.setDeleted(faker.bool().bool());
 
@@ -158,6 +166,7 @@ public class RunAtStartup {
         f9.setName("Hugo Boss Bottled");
         f9.setNotesDescription("woody and spicy scent");
         f9.setPrice(84);
+        f9.setImage("https://media.douglas.ro/media/image/86/2a/85/706996_1280x1280.jpg");
         f9.setQuantity(100);
         f9.setDeleted(faker.bool().bool());
 
@@ -165,6 +174,7 @@ public class RunAtStartup {
         f10.setName("Versace Eros Flame");
         f10.setNotesDescription("fresh and woody scent");
         f10.setPrice(90);
+        f10.setImage("https://media.douglas.ro/media/image/2b/a9/80/8011003845354_1280x1280.jpg");
         f10.setQuantity(100);
         f10.setDeleted(faker.bool().bool());
         productRepository.save(f1);
@@ -203,6 +213,7 @@ public class RunAtStartup {
         f1.setName("\"Euphoria\" by Calvin Klein");
         f1.setNotesDescription("floral and fruity scent");
         f1.setPrice(70);
+        f1.setImage("https://esentedelux.ro/281-tm_large_default/calvin-klein-euphoria-eau-de-parfum-pentru-femei.jpg");
         f1.setQuantity(100);
         f1.setDeleted(faker.bool().bool());
 
@@ -210,6 +221,7 @@ public class RunAtStartup {
         f2.setName("\"Light Blue\" by Dolce & Gabbana");
         f2.setNotesDescription("citrus and floral scent");
         f2.setPrice(78);
+        f2.setImage("https://esentedelux.ro/4377-tm_large_default/dolce-gabbana-light-blue-eau-intense-eau-de-parfum-pentru-femei.jpg");
         f2.setQuantity(100);
         f2.setDeleted(faker.bool().bool());
 
@@ -218,6 +230,7 @@ public class RunAtStartup {
         f3.setName("\"Coco Mademoiselle\" by Chanel");
         f3.setNotesDescription("oriental and floral scent");
         f3.setPrice(138);
+        f3.setImage("https://esentedelux.ro/386-tm_large_default/chanel-coco-mademoiselle-eau-de-toilette-pentru-femei.jpg");
         f3.setQuantity(100);
         f3.setDeleted(faker.bool().bool());
 
@@ -226,6 +239,7 @@ public class RunAtStartup {
         f4.setName("\"Acqua di Gio\" by Giorgio Armani");
         f4.setNotesDescription(" aquatic and floral scent");
         f4.setPrice(92);
+        f4.setImage("https://esentedelux.ro/3070-tm_large_default/giorgio-armani-acqua-di-gio-profumo-eau-de-parfum-pentru-barbati.jpg");
         f4.setQuantity(100);
         f4.setDeleted(faker.bool().bool());
 
@@ -234,6 +248,7 @@ public class RunAtStartup {
         f5.setName("\"Very Irresistible\" by Givenchy");
         f5.setNotesDescription("floral and fruity scent");
         f5.setPrice(70);
+        f5.setImage("https://esentedelux.ro/759-tm_large_default/givenchy-very-irresistible-electric-rose-eau-de-toilette-pentru-femei.jpg");
         f5.setQuantity(100);
         f5.setDeleted(faker.bool().bool());
 
@@ -241,6 +256,7 @@ public class RunAtStartup {
         f6.setName("\"Gucci Bloom\"");
         f6.setNotesDescription("floral and woody scent");
         f6.setPrice(100);
+        f6.setImage("https://cdn.notinoimg.com/detail_main_mq/gucci/8005610481005_02-o/gucci-bloom-eau-de-parfum-pentru-femei___16.jpg");
         f6.setQuantity(100);
         f6.setDeleted(faker.bool().bool());
 
@@ -248,14 +264,16 @@ public class RunAtStartup {
         f7.setName("\"Yves Saint Laurent La Nuit de l'Homme\"");
         f7.setNotesDescription("spicy and woody scent");
         f7.setPrice(94);
+        f7.setImage("https://cdn.notinoimg.com/detail_main_mq/yves-saint-laurent/3365440375079_01-o/yves-saint-laurent-la-nuit-de-lhomme-eau-de-toilette-pentru-barbati___28.jpg");
         f7.setQuantity(100);
         f7.setDeleted(faker.bool().bool());
 
 
         Product f8 = new Product();
-        f8.setName("Tom Ford Noir");
+        f8.setName("Tom Ford Noir Extreme");
         f8.setNotesDescription("oriental and spicy scent");
         f8.setPrice(120);
+        f8.setImage("https://media.douglas.ro/media/image/2b/02/9c/888066035392_1280x1280.jpg");
         f8.setQuantity(100);
         f8.setDeleted(faker.bool().bool());
 
@@ -263,6 +281,7 @@ public class RunAtStartup {
         f9.setName("Hugo Boss Bottled");
         f9.setNotesDescription("woody and spicy scent");
         f9.setPrice(84);
+        f9.setImage("https://media.douglas.ro/media/image/86/2a/85/706996_1280x1280.jpg");
         f9.setQuantity(100);
         f9.setDeleted(faker.bool().bool());
 
@@ -270,36 +289,42 @@ public class RunAtStartup {
         f10.setName("Versace Eros Flame");
         f10.setNotesDescription("fresh and woody scent");
         f10.setPrice(90);
+        f10.setImage("https://media.douglas.ro/media/image/2b/a9/80/8011003845354_1280x1280.jpg");
         f10.setQuantity(100);
         f10.setDeleted(faker.bool().bool());
         Product f11 = new Product();
         f11.setName("\"Aqua Pour Homme\" by Versace");
         f11.setNotesDescription("fresh and aquatic scent");
         f11.setPrice(70);
+        f11.setImage("https://media.douglas.ro/media/image/d1/8f/18/376395_1280x1280.jpg");
         f11.setQuantity(100);
         f11.setDeleted(faker.bool().bool());
         Product f12 = new Product();
         f12.setName("\"Terre d'Hermes\" by Hermes");
         f12.setNotesDescription("woody and spicy scent");
         f12.setPrice(115);
+        f12.setImage("https://media.douglas.ro/media/image/af/70/62/3346130012245_1280x1280.jpg");
         f12.setQuantity(100);
         f12.setDeleted(faker.bool().bool());
         Product f13 = new Product();
         f13.setName("\"Armani Code\" by Giorgio Armani");
         f13.setNotesDescription("oriental and floral scent");
         f13.setPrice(85);
+        f13.setImage("https://esentedelux.ro/4875-tm_large_default/giorgio-armani-code-eau-de-parfum-pentru-barbati.jpg");
         f13.setQuantity(100);
         f13.setDeleted(faker.bool().bool());
         Product f14 = new Product();
         f14.setName("\"Drakkar Noir\" by Guy Laroche");
         f14.setNotesDescription("spicy and woody scent");
         f14.setPrice(70);
+        f14.setImage("https://cdn.notinoimg.com/detail_main_mq/guy-laroche/3360372009436_02-o/guy-laroche-drakkar-noir-eau-de-toilette-pentru-barbati___30.jpg");
         f14.setQuantity(100);
         f14.setDeleted(faker.bool().bool());
         Product f15 = new Product();
         f15.setName("\"Invictus\" by Paco Rabanne");
         f15.setNotesDescription("fresh and woody scent");
         f15.setPrice(85);
+        f15.setImage("https://cdn.notinoimg.com/detail_main_mq/paco-rabanne/3349668515660_01-o/paco-rabanne-invictus-eau-de-toilette-pentru-barbati___31.jpg");
         f15.setQuantity(100);
         f15.setDeleted(faker.bool().bool());
 
