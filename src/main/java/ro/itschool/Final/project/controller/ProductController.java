@@ -28,10 +28,6 @@ public class ProductController {
     @Autowired
     private UserService userService;
 
-//    @GetMapping(value = "/all")
-//    public List<Product> getAllProducts() {
-//        return productRepository.findAll();
-//    }
 
 
     @RequestMapping(value = {"/all"})
@@ -50,17 +46,17 @@ public class ProductController {
 
     @RequestMapping(value = "/add/{id}")
     public String addProductToShoppingCart(@PathVariable Integer id) {
-        //cautam produsul dupa id
+        //searching the product after id
         Optional<Product> optionalProduct = productRepository.findById(id);
 
-        //stabilim care e username-ul user-ului autentificat
+        //get username of user auth
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = auth.getName();
 
-        //aducem userul din db pe baza username-ului
+        //get the user from db
         MyUser userByUserName = userService.findUserByUserName(currentPrincipalName);
 
-        //in shopping cart-ul userului adus adaugam produsul trimis din frontend
+        //in user cart we will add the product sent from frontend
         optionalProduct.ifPresent(product -> {
             userByUserName.getShoppingCart().addProductToShoppingCart(product);
             userService.updateUser(userByUserName);

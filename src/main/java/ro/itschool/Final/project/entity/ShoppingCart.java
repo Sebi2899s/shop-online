@@ -30,7 +30,7 @@ public class ShoppingCart {
         this.products.add(product);
     }
 
-    public void removeFragranceFromShoppingCart(Product product) {
+    public void removeProductFromShoppingCart(Product product) {
         this.products.remove(product);
     }
 }

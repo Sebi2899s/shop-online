@@ -29,7 +29,7 @@ public class Order {
     @ManyToOne
     private MyUser user;
 
-    public void addFragranceToOrder(Product product) {
+    public void addProductToOrder(Product product) {
         this.products.add(product);
     }
 }

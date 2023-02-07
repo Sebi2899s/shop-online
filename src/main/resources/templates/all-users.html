@@ -34,9 +34,14 @@
 
 
 
+
     </style>
 </head>
 <body>
+<header>
+    <div th:replace="~{fragments/navs.html :: topnav}"></div>
+</header>
+
 
 <div sec:authorize="hasRole('ROLE_ADMIN')">
     <div class="container my-2">
@@ -48,15 +53,6 @@
                             <form th:action="@{/users}" method="get">
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <!--                                        <div class="input-group mb-3">-->
-                                        <!--                                            <input type="text" name="keyword" th:value="${keyword}"-->
-                                        <!--                                                   class="form-control input-text" placeholder="Search"-->
-                                        <!--                                                   aria-describedby="basic-addon2">-->
-                                        <!--                                            <div class="input-group-append">-->
-                                        <!--                                                <button class="btn btn-outline-dark btn-md" type="submit"><i-->
-                                        <!--                                                        class="fa fa-search"></i></button>-->
-                                        <!--                                            </div>-->
-                                        <!--                                        </div>-->
                                     </div>
                                 </div>
                             </form>
