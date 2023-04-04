@@ -61,7 +61,6 @@ public class ProductController {
             userByUserName.getShoppingCart().addProductToShoppingCart(product);
             userService.updateUser(userByUserName);
         });
-
         return Constants.REDIRECT_TO_PRODUCTS;
     }
 

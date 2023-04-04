@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <title>All Users</title>
     <meta charset="utf-8">
@@ -51,9 +51,9 @@
                     <div class="col-md-10">
                         <div class="search-container">
                             <form th:action="@{/users}" method="get">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                    </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search users..." name="q">
+                                    <button class="btn btn-outline-secondary" type="submit">Search</button>
                                 </div>
                             </form>
                         </div>

@@ -32,29 +32,6 @@ public class ShoppingCartController {
     @Autowired
     private UserService userService;
 
-//    @PutMapping(value = "/add/{cartId}")
-//    public ResponseEntity addProductToShoppingCart(@PathVariable Integer cartId, @RequestParam Integer productId) {
-//
-//        Product product = productRepository.findById(productId).orElseThrow();
-//        ShoppingCart cart = shoppingCartService.findById(cartId).orElseThrow();
-//
-//        cart.addProductToShoppingCart(product);
-//        shoppingCartService.update(cart);
-//
-//        return ResponseEntity.ok().build();
-//    }
-//
-//    @PutMapping(value = "/remove/{cartId}")
-//    public ResponseEntity removeProductFromShoppingCart(@PathVariable Integer cartId, @RequestParam Integer productId) {
-//
-//        Product product = productRepository.findById(productId).orElseThrow();
-//        ShoppingCart cart = shoppingCartServie.findById(cartId).ocrElseThrow();
-//
-//        cart.removeProductFromShoppingCart(product);
-//        shoppingCartService.update(cart);
-//
-//        return ResponseEntity.ok().build();
-//    }
 
     @RequestMapping(value = "/to-order")
     public String convertToOrder() {
