@@ -98,7 +98,8 @@ public class ShoppingCartController {
 
         Optional<Product> optionalProduct = productRepository.findById(productId);
 
-        userByUserName.getShoppingCart().getProducts().removeIf(product -> product.getId().equals(productId));
+//        userByUserName.getShoppingCart().getProducts().removeIf(product -> product.getId().equals(productId));
+        userByUserName.getShoppingCart().getProducts().stream().filter(product -> product.getId().equals(productId)).findFirst().ifPresent(product -> userByUserName.getShoppingCart().getProducts().remove(product));
         userService.updateUser(userByUserName);
 
         return "redirect:/shopping-cart";
