@@ -31,7 +31,7 @@
 <!--                         Product name-->
                         <h5 class="fw-bolder" th:text="${product.name}"></h5>
                         <!-- Product price-->
-                        <span th:text="${product.price}"></span>
+                        <span th:text="${product.price}">$</span>
                     </div>
                 </div>
 
@@ -47,7 +47,6 @@
                                             th:href="@{'/product/add/' + ${product.id}}">
                     <i class="bi-cart-fill me-1"></i>
                     Add to cart </a>
-                    </button>
                 </div>
             </div>
         </div>

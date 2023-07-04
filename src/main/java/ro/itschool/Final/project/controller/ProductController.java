@@ -41,6 +41,7 @@ public class ProductController {
     public String deleteProduct(@PathVariable Integer id) {
         shoppingCartService.deleteProductByIdFromShoppingCart(id);
         productRepository.deleteById(id);
+
         return Constants.REDIRECT_TO_PRODUCTS;
     }
 

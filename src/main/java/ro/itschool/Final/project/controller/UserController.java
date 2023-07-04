@@ -28,19 +28,6 @@ public class UserController {
 
 
     //--------- GET all users for ADMINs only ------------------------------
-//    @GetMapping("/users")
-//    public String getAllUsers(Model model, String keyword) throws Exception {
-//        model.addAttribute("users", userService.searchUser(keyword));
-//        model.addAttribute("roles", roleRepository.findAll().stream().map(Role::getName).toList());
-//        model.addAttribute("adminRole", roleRepository.findAll()
-//                .stream()
-//                .map((Role::getName))
-//                .filter(role -> role.equals(Constants.ROLE_ADMIN))
-//                .findAny()
-//                .orElseThrow(() -> new Exception("User with admin roles not found")));
-//
-//        return "all-users";
-//    }
     @GetMapping("/users")
     public String getAllUsers(Model model, @RequestParam(name = "q", required = false) String keyword) throws Exception {
         List<MyUser> users;
